@@ -1,5 +1,5 @@
 rootProject.name = 'code-kata'
 
-include 'baseball', 'member', 'clean-code', 'problems', 'calculator', 'web-application-server'
-include 'highlight'
+//include 'baseball', 'member', 'clean-code', 'problems', 'calculator', 'web-application-server'
+//include 'highlight'
 

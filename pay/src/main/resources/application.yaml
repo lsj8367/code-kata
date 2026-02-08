@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+decorator:
+  datasource:
+    datasource-proxy:
+      logging: slf4j
+      multiline: true
+      slow-query:
+        enable-logging: true
+        threshold: 3000
+      query:
+        log-level: INFO
+        logger-name: sql.log
+    enabled: true
+
+logging:
+  level:
+    sql.log: INFO
